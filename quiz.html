@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Quiz Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="home.html">Home</a>
+  <a href="midterm.html">Midterm</a>
+  <a href="assistance.html">Assistance</a>
+  <a href="quiz.html">Quiz</a>
+</nav>
+
+<div class="container">
+    <h2>📝 Simple Quiz Tool</h2>
+
+    <p>Time Left: <span id="timer">30</span> seconds</p>
+
+    <form id="quizForm">
+
+        <p>1. What is 2 + 2?</p>
+        <input type="radio" name="q1" value="4"> 4<br>
+        <input type="radio" name="q1" value="5"> 5<br>
+
+        <p>2. What color is the sky?</p>
+        <input type="radio" name="q2" value="Blue"> Blue<br>
+        <input type="radio" name="q2" value="Green"> Green<br>
+
+        <p>3. What is the capital of the Philippines?</p>
+        <input type="radio" name="q3" value="Manila"> Manila<br>
+        <input type="radio" name="q3" value="Cebu"> Cebu<br>
+
+        <p>4. How many days are in a week?</p>
+        <input type="radio" name="q4" value="7"> 7<br>
+        <input type="radio" name="q4" value="5"> 5<br>
+
+        <p>5. What planet do we live on?</p>
+        <input type="radio" name="q5" value="Earth"> Earth<br>
+        <input type="radio" name="q5" value="Mars"> Mars<br><br>
+
+        <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+    </form>
+
+    <p id="result"></p>
+
+    <br>
+    <a href="assistance.html">← Back to Assistance Tool</a>
+</div>
+
+<a href="home.html">🏠 Back to Home</a>
+<br><br>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Educational Assistance Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+  <a href="home.html">Home</a>
+  <a href="midterm.html">Midterm</a>
+  <a href="assistance.html">Assistance</a>
+  <a href="quiz.html">Quiz</a>
+</nav>
+
+<div class="container">
+    <h2>📘 Educational Assistance Tool</h2>
+
+    <p>1. How much is the tuition fee per semester?</p>
+    <input type="text" id="q1Input" placeholder="Type your answer">
+    <button onclick="checkAnswer(1)">Submit</button>
+    <p id="feedback1"></p>
+
+    <p>2. What time does the class start?</p>
+    <input type="text" id="q2Input" placeholder="Type your answer">
+    <button onclick="checkAnswer(2)">Submit</button>
+    <p id="feedback2"></p>
+
+    <p>3. OLSHCO stands for?</p>
+    <input type="text" id="q3Input" placeholder="Type your answer">
+    <button onclick="checkAnswer(3)">Submit</button>
+    <p id="feedback3"></p>
+
+    <p id="progress"></p>
+
+    <br>
+    <a href="quiz.html">Go to Quiz Tool →</a>
+</div>
+
+<a href="home.html">🏠 Back to Home</a>
+<br><br>
+
+<script src="script.js"></script>
+</body>
+</html>

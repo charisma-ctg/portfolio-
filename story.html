@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Story | Charisma Gamboa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+<nav>
+  <a href="home.html">Home</a>
+  <a href="prelim.html">Prelim</a>
+  <a href="about.html">About</a>
+  <a href="story.html">Story</a>
+  <a href="project.html">Project</a>
+</nav>
+
+<div class="story-box">
+  <div class="icon" id="icon"></div>
+  <h2 id="title"></h2>
+  <p id="text"></p>
+
+<button class="prev" onclick="prev()">Previous</button>
+<button class="next" onclick="next()">Next</button>
+<button class="close" onclick="closeStory()">Close</button>
+
+  
+</div>
+
+<footer>
+  <p>© 2026 Charisma T. Gamboa</p>
+</footer>
+
+<script>
+  const story = [
+    { icon: "fa-star", 
+    title: "Luna the Little Star",
+    text: "High in the night sky lived Luna, a small star who dreamed of shining brighter." },
+    { icon: "fa-moon", 
+    title: "Feeling Small",
+    text: "Luna often compared herself to brighter stars and felt she was not enough." },
+    { icon: "fa-lightbulb", 
+    title: "New Understanding",
+    text: "Luna realized her gentle light helped guide people safely through the night." },
+    { icon: "fa-heart", 
+    title: "Shining with Purpose",
+    text: "Luna learned that every light has a purpose, no matter how small." }
+  ];
+
+  let i = 0;
+
+  function show() {
+    document.getElementById("icon").innerHTML = `<i class="fas ${story[i].icon}"></i>`;
+    document.getElementById("title").innerText = story[i].title;
+    document.getElementById("text").innerText = story[i].text;
+  }
+
+  function next() {
+    if (i < story.length - 1) {
+      i++;
+      show();
+    } else {
+      alert("End of the story 💖");
+    }
+  }
+ 
+  function closeStory() {
+  window.location.href = "home.html";
+}
+
+
+  function prev() {
+    if (i > 0) {
+      i--;
+      show();
+    }
+  }
+
+  show();
+</script>
+
+</body>
+</html>
